@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aktuální Dění — 20. 9. 2026</title>
+<style>
+  :root { --papir:#e9dfc6; --inkoust:#221c14; --slaba:#6b5f4a; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:24px 16px 60px;
+    background:#3a332a;
+    color:var(--inkoust);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  }
+  .list {
+    max-width:900px; margin:0 auto; padding:40px 44px 56px;
+    background:
+      repeating-linear-gradient(0deg, rgba(120,100,60,.035) 0 2px, transparent 2px 5px),
+      radial-gradient(120% 90% at 50% 0%, #f2e9d2 0%, var(--papir) 60%, #ddd0b2 100%);
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+  }
+  header { text-align:center; border-bottom:4px double var(--inkoust); padding-bottom:12px; }
+  .hlavicka-nad { font-size:11px; letter-spacing:.35em; text-transform:uppercase; color:var(--slaba); }
+  h1 {
+    margin:10px 0 6px; font-size:clamp(38px,9vw,74px); font-weight:700;
+    letter-spacing:.04em; line-height:.95; text-transform:uppercase;
+  }
+  .podtitul { font-style:italic; font-size:15px; color:var(--slaba); }
+  .tiraz {
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+    margin-top:14px; padding:6px 0; border-top:1px solid var(--inkoust); border-bottom:1px solid var(--inkoust);
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  }
+  .hlavni-titulek {
+    margin:26px 0 4px; text-align:center; font-size:clamp(26px,5.4vw,42px);
+    line-height:1.08; text-transform:uppercase; letter-spacing:.01em;
+  }
+  .nadtitulek { text-align:center; font-style:italic; color:var(--slaba); font-size:14px; }
+  .sazba { column-count:2; column-gap:34px; column-rule:1px solid rgba(34,28,20,.3); margin-top:18px; text-align:justify; hyphens:auto; }
+  .sazba p { margin:0 0 10px; font-size:15px; line-height:1.5; }
+  .sazba.hlavni p:first-of-type::first-letter {
+    float:left; font-size:56px; line-height:.82; padding:4px 8px 0 0; font-weight:700;
+  }
+  h2 {
+    margin:22px 0 8px; font-size:20px; text-transform:uppercase; letter-spacing:.06em;
+    border-bottom:1px solid var(--inkoust); padding-bottom:4px;
+  }
+  .oddelovac { text-align:center; letter-spacing:.8em; margin:26px 0 6px; color:var(--slaba); }
+  ul.kratke { list-style:none; margin:0; padding:0; column-count:2; column-gap:34px; }
+  ul.kratke li { margin:0 0 12px; font-size:14px; line-height:1.45; break-inside:avoid; }
+  ul.kratke b { display:block; text-transform:uppercase; font-size:12px; letter-spacing:.1em; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:5px 4px; border-bottom:1px dotted rgba(34,28,20,.4); text-align:left; }
+  th { text-transform:uppercase; font-size:11px; letter-spacing:.12em; }
+  .tecka { margin-top:24px; padding:14px 18px; border:1px solid var(--inkoust); font-style:italic; font-size:14px; }
+  footer { margin-top:30px; border-top:4px double var(--inkoust); padding-top:10px; text-align:center; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--slaba); }
+  .navigace { margin-top:10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+  .navigace a { color:var(--inkoust); text-decoration:none; border-bottom:1px solid rgba(34,28,20,.45); }
+  .navigace a:hover { border-bottom-width:2px; }
+  .starsi { margin-top:28px; padding-top:10px; border-top:1px solid var(--inkoust); }
+  .starsi h2 { border:0; margin:0 0 8px; }
+  .starsi ul { list-style:none; margin:0; padding:0; column-count:2; column-gap:34px; font-size:14px; }
+  .starsi li { margin:0 0 6px; break-inside:avoid; }
+  .starsi a { color:var(--inkoust); }
+  @media (max-width:640px) {
+    .list { padding:26px 20px 36px; }
+    .sazba, ul.kratke, .starsi ul { column-count:1; }
+  }
+  @media print {
+    @page { size:A4; margin:14mm 12mm; }
+    body { background:#fff; padding:0; font-size:11pt; }
+    .list { max-width:none; padding:0; box-shadow:none; background:#fff; }
+    .navigace, .starsi { display:none; }
+    .sazba p { orphans:3; widows:3; }
+    h2, .hlavni-titulek { break-after:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="list">
+  <header>
+    <div class="hlavicka-nad">Týdeník pro Jesenicko</div>
+    <h1>Aktuální&nbsp;Dění</h1>
+    <div class="podtitul">Zprávy z obcí, polí a lesů pod Rychlebskými horami</div>
+    <div class="tiraz">
+      <span>Ročník I. — číslo 1</span>
+      <span>Neděle 20. září 2026</span>
+      <span>Cena: dobré slovo</span>
+    </div>
+    <nav class="navigace">
+      <a href="../index.html">Aktuální vydání</a> ·
+      <a href="../archiv.html">Archiv</a> ·
+      <a href="2026-09-20.pdf">Stáhnout PDF</a>
+    </nav>
+  </header>
+
+  <div class="nadtitulek">Doprava a informovanost</div>
+  <h2 class="hlavni-titulek">Silnice do Velké Kraše je uzavřená. Informace chodí pozdě</h2>
+  <div class="sazba hlavni">
+    <p>Od čtvrtka 17. září je silnice III/4539 mezi Kobylou nad Vidnavkou a Velkou Kraší úplně uzavřena. Podle informace obce má uzavírka trvat do 16. října. Předpoklad z informačního dokumentu obce Kobylá n. Vidnavkou je, že spojovací a nosná vrstva se budou pokládat 5. října, vrchní asfaltová vrstva pak 8. října.</p>
+    <p>Úsek je neprůjezdný od osmé ranní do páté odpolední. Zkušenost místních je ale taková, že komplikace začínají dřív. Kdo veze děti do školky, měl by počítat s rezervou i před osmou hodinou.</p>
+    <p>Zakázku zadala Správa silnic Olomouckého kraje společnosti KARETA. Smlouva byla uzavřena 5. srpna letošního roku, cena činí 12,26 milionu korun bez daně z přidané hodnoty. Při základní sazbě 21 procent to s daní dělá zhruba 14,8 milionu korun.</p>
+    <p>Horší než samotná uzavírka je ovšem informovanost. Obec Kobylá nad Vidnavkou vyvěsila dokument nazvaný 2. informace pro občany tři dny před uzavřením silnice, 14. září. První zmínka se na jejím webu objevila 1. září. Podrobnější harmonogram prací k dispozici není a skutečný postup na stavbě se od oznámeného liší.</p>
+    <p>Ve spodní části Kobylé navážejí nákladní vozy drť přímo na starou vozovku. Vypadá to na přípravu podkladu pod nový povrch, jak ale bude firma pokračovat dál, oznámeno nebylo. Mezi lidmi to budí rozpaky. „V pátek si skončí pracanti před jedenáctou dopoledne a do pondělí se nic neděje. To pak není divu, že to budou dělat měsíc,“ říká jeden z místních. Jiný dodává: „Tohle mělo stát tolik peněz? Vždyť naváží suť na starou cestu. Snad to ještě vyfrézují a udělají pořádně.”</p>
+    <p>Uzavírka se dotkla i autobusů. Linky 125 a 126 jezdí v úseku Velká Kraš — Tomíkovice podle výlukových jízdních řádů, a to od 17. září do 16. října.</p>
+    <p>Podrobnější a včasnější informování ze strany obce i investora by občanům dotčené obce a okolí pomohlo. Stavba za bezmála patnáct milionů korun si zaslouží harmonogram, který se dá přečíst dřív než tři dny předem.</p>
+  </div>
+
+  <div class="oddelovac">※ ※ ※</div>
+
+  <h2>Dva roky od povodně. Některé opravy dosud nezačaly</h2>
+  <div class="sazba">
+    <p>V září uplynuly dva roky od povodně, která Jesenicko zasáhla obzvlášť tvrdě. Z dostupných informací má město Jeseník rozjetých třináct investičních akcí a podalo žádosti o dotace na sto sedm projektů; úplná obnova infrastruktury potrvá ještě roky.</p>
+    <p>Z pohledu občana to ovšem není celý obrázek. Silnice se na řadě míst opravují na poslední chvíli před zimou, koryta potoků se upravují ještě letos a na některých místech práce vůbec nezačaly. Dva roky jsou dlouhá doba.</p>
+  </div>
+
+  <h2>Krátké zprávy</h2>
+  <ul class="kratke">
+    <li><b>Autobusy</b>Linky 125 a 126 jezdí v úseku Velká Kraš — Tomíkovice podle výlukových jízdních řádů od 17. září do 16. října.</li>
+    <li><b>Volby</b>Komunální volby a první kolo senátních se konají v pátek 9. října od 14 do 22 hodin a v sobotu 10. října od 8 do 14 hodin. Případné druhé kolo do Senátu proběhne 16. a 17. října.</li>
+    <li><b>Žulová</b>Základní škola má novou učebnu jazyků a informatiky s interaktivní tabulí a počítači. Vyšla zhruba na dva miliony korun.</li>
+    <li><b>Bělá pod Pradědem</b>V obci se konaly tradiční dožínky, slavnost na konci léta pořádaná zemědělci.</li>
+    <li><b>Policie</b>Přerovští policisté pátrají po šestnáctiletém chlapci, který se může pohybovat na Jesenicku. Žádají veřejnost o pomoc.</li>
+    <li><b>Cestovní ruch</b>Hoteliéři v Jeseníkách hodnotí letní sezonu příznivě. Menší ubytovny naopak hlásí nižší obsazenost a náročnější hosty.</li>
+  </ul>
+
+  <!-- Rubrika Z TERÉNU (zatím vypnutá, přidáme později)
+  <h2>Z terénu</h2>
+  <div class="sazba">
+  </div>
+  -->
+
+  <h2>Počasí na týden</h2>
+  <table>
+    <tr><th>Den</th><th>Ráno</th><th>Odpoledne</th><th>Obloha</th></tr>
+    <tr><td>Pondělí 21. 9.</td><td>8 °C</td><td>12 °C</td><td>déšť, ráno ojediněle</td></tr>
+    <tr><td>Úterý 22. 9.</td><td>7 °C</td><td>11 °C</td><td>zataženo</td></tr>
+    <tr><td>Středa 23. 9.</td><td>7 °C</td><td>13 °C</td><td>oblačno, večer jasněji</td></tr>
+    <tr><td>Čtvrtek 24. 9.</td><td>7 °C</td><td>15 °C</td><td>oblačno</td></tr>
+    <tr><td>Pátek 25. 9.</td><td>8 °C</td><td>12 °C</td><td>zataženo, večer déšť</td></tr>
+    <tr><td>Sobota 26. 9.</td><td>8 °C</td><td>15 °C</td><td>zataženo, večer polojasno</td></tr>
+    <tr><td>Neděle 27. 9.</td><td>9 °C</td><td>18 °C</td><td>oblačno, odpoledne déšť</td></tr>
+  </table>
+
+  <div class="tecka"><b>A na závěr.</b> Hlava si jede a neví kam. Asi to vědět nepotřebuje.</div>
+
+
+
+  <footer>Aktuální Dění · týdeník pro Jesenicko · vychází v neděli</footer>
+</div>
+</body>
+</html>
